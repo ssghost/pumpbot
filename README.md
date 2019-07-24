@@ -1,5 +1,5 @@
 # pumpbot
-My pump-bot for Bittrex trading. 
+My pump-bot for rapid Bittrex tradings. 
 Usage:
 
 `$python pumpbot.py`
