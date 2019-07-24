@@ -1,0 +1,5 @@
+BittrexAPI
+Key
+some_key
+Secret
+some_secret
