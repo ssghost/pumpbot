@@ -3,7 +3,7 @@ import time
 import sys
 
 def main():
-    with open('/Users/songshuang/Desktop/BittrexAPI.txt') as apifile:
+    with open('./BittrexAPI.txt') as apifile:
         lines = apifile.readlines()
         my_api_key = lines[2]
         my_api_secret = lines[4]
