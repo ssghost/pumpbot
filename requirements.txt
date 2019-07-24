@@ -1,0 +1,1 @@
+-e git+https://github.com/ericsomdahl/python-bittrex.git#egg=bittrex
