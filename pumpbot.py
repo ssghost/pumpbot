@@ -13,9 +13,12 @@ def main():
         print('API Logged In.')
     except:
         print('Login Error.')
-
-    quantity = float(input('Set quantity as:'))
-    aim = str(input('Set aim coin as:'))
+    
+    try:
+        quantity = float(input('Set quantity as:'))
+        aim = str(input('Set aim coin as:'))
+    except EOFError:
+        print('Input Error.')
 
     balance = my_bittrex.get_balance('BTC')
     buy_market = 'BTC-'+aim
