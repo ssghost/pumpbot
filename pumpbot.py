@@ -19,7 +19,6 @@ def main():
         aim = str(input('Set aim coin as:'))
     except EOFError:
         print('Input Error.')
-	sys.exit()
 
     balance = my_bittrex.get_balance('BTC')
     buy_market = 'BTC-'+aim
