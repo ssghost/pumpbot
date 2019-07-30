@@ -17,7 +17,7 @@ def main():
     try:
         quantity = float(input('Set quantity as:'))
         aim = str(input('Set aim coin as:'))
-    except EOFError:
+    except:
         print('Input Error.')
 
     balance = my_bittrex.get_balance('BTC')
