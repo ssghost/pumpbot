@@ -22,7 +22,7 @@ def main():
         print('Input Error.')
 
     balance = my_bittrex.get_balance('BTC')
-    if aim != None
+    if aim != None:
         buy_market = 'BTC-'+aim
         sell_market = aim+'-BTC'
     buy_rate = my_bittrex.get_ticker(buy_market)['result']['Bid']
