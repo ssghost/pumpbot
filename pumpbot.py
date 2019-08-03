@@ -18,11 +18,13 @@ def main():
         quantity = float(input('Set quantity as:'))
         aim = str(input('Set aim coin as:'))
     except:
+	aim = None
         print('Input Error.')
 
     balance = my_bittrex.get_balance('BTC')
-    buy_market = 'BTC-'+aim
-    sell_market = aim+'-BTC'
+    if aim != None
+        buy_market = 'BTC-'+aim
+        sell_market = aim+'-BTC'
     buy_rate = my_bittrex.get_ticker(buy_market)['result']['Bid']
 
     if quantity <= balance:
