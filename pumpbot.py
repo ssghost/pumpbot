@@ -26,7 +26,7 @@ def main():
         buy_market = 'BTC-'+aim
         sell_market = aim+'-BTC'
     else:
-	sys.exit()
+        sys.exit()
     buy_rate = my_bittrex.get_ticker(buy_market)['result']['Bid']
 
     if quantity <= balance:
