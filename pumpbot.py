@@ -18,7 +18,7 @@ def main():
         quantity = float(input('Set quantity as:'))
         aim = str(input('Set aim coin as:'))
     except:
-	aim = None
+        aim = None
         print('Input Error.')
 
     balance = my_bittrex.get_balance('BTC')
